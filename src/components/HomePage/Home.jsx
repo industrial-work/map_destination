@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import OfferSlider from './OfferSection/OfferSlide'
+import Banner from './Banner/Banner'
 import OurServices from './OurServices/OurServices'
 import DealSlider from './DealSection/DealSlide'
 import './home.css'
@@ -127,6 +128,9 @@ function Home() {
               </div>
               <div className="OurServices">
                   <OurServices/>
+              </div>
+              <div className="Banner">
+                  <Banner/>
               </div>
               </>
             )}

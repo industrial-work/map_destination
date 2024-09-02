@@ -1,0 +1,22 @@
+.banner-parent{
+   width: 100%;
+   display: flex;
+    justify-content: center;
+   /* border: 2px solid red; */
+}
+.child{
+    /* border: 2px solid rgb(229, 255, 0); */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+.banner-parent img{
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 52px;
+}
+.banner-parent h1{
+    margin: 30px 0px;
+}

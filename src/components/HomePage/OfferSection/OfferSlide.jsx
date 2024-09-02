@@ -27,7 +27,7 @@ function OfferSlide() {
   <> 
   <Carousel className="slider" responsive={responsive}
         showDots={true}
-        autoPlay={false}
+        autoPlay={true}
         autoPlaySpeed={1500}
         infinite={true}
         draggable={false}
