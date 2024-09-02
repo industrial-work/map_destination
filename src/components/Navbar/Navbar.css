@@ -1,0 +1,287 @@
+
+  /* Navbar------------ */
+  /* #topnav{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    border: 0;
+    transition: all .5s ease;
+  } */
+  .nav-container{
+    display: flex;
+      justify-content: center;
+      margin: 20px 35px 0px 35px;
+  }
+  @media only screen and (max-width: 750px) {
+    .nav-container{
+        justify-content: space-between;
+    }
+  }
+  .img-div{
+    margin-right: 50px;
+  }
+  #navigation{
+    display: block !important;
+    width: 100vw;
+  }
+  .navbar-scrolled{
+    background-color: #fff;
+      box-shadow: 0 0 3px rgba(50, 60, 70, 0.5);
+  }
+  .navbar-scrolled .nav-links li a{
+    font-family: "Axiforma";
+      color: #36414c;
+  }
+  .navbar-scrolled .nav-links li a:hover{
+      color: var(--lb-color);
+  }
+  .navbar-scrolled .nav-links .menu-arrow{
+      border: solid #36414c;
+      border-radius: 0.5px;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 2.3px;
+      transform: rotate(45deg);
+      position: absolute;
+      font-weight: bolder;
+      transition: all .5s;
+      right: -5px;
+      top: 8px;
+      margin: 0px 9px 0px 0px;
+  }
+  
+  /* menu arrow */
+  .menu-arrow{
+    border: solid rgba(255, 255, 255, .5);
+      border-radius: 0.5px;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      
+      padding: 2.3px;
+      transform: rotate(45deg);
+      position: absolute;
+      font-weight: bolder;
+      transition: all .5s;
+      right: -5px;
+      top: 8px;
+      margin: 0px 9px 0px 0px;
+  }
+  #topnav .nav-logo {
+    float: left;
+  }
+  .nav-logo{
+    font-weight: 700;
+      font-size: 24px;
+      margin-right: 15px;
+      padding: 19px 0;
+      letter-spacing: 1px;
+      line-height: 68px;
+  }
+  
+  /*Styling Links*/
+  .nav-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+  }
+  .nav-links li{
+    float: left;
+      display: block;
+      position: relative;
+      margin: 20px 0px;
+  }
+  .nav-links li:hover{
+    border-color: #272727;
+    font-weight: bolder;
+  }
+
+
+  .nav-links li a{
+    display: block;
+    color:black;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255);
+    font-weight: bolder; 
+    letter-spacing: 1px;
+    line-height: 24px;
+    transition: all .5s;
+    padding-left: 13px;
+    padding-right: 13px;
+    text-decoration: none;
+  }
+  
+  nav ul{
+    margin-bottom: 0px
+    
+  }
+  .nav-links li a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: var(--lb-color);
+    position: absolute;
+    transition: all ease-in-out 300ms;
+    margin: 0 10% 0 0;
+  }
+  .nav-links li a:hover::after{
+    width: 60%;
+  }
+  
+  .button {
+    color: #ffff;
+    font-size: 13px;
+    background-color: #0078ff;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 24px;
+    transition: all .5s;
+    padding: 5px 12px;
+    margin-left: 40px;
+    text-decoration: none;
+  
+  }
+  
+  .button:hover {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: inset 0 -100px 0 0 var(--lb-color);
+  }
+  
+  
+  /* List Nav bar */
+  
+  .dropdown-content{
+    font-size: small;
+    /* justify-content: start; */
+    position: fixed;
+    background-color: var(--wcolor);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .dropdown-content li{
+    padding: 10px 0px; 
+  }
+  .dropdown-content li a{
+    color: black;
+  }
+  .dropdown-content li a:hover{
+    color: var(--lb-color) !important;
+  
+  }
+  
+  
+  
+  
+  /*Styling Hamburger Icon*/
+  .hamburger div{
+    width: 30px;
+    height:3px;
+    background: #144084;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  .hamburger{
+    display: none;
+  }
+  
+  /*Stying for small screens*/
+  @media screen and (max-width: 700px){
+    
+    #topnav{
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      border: 0;
+      transition: all .5s ease;
+    }
+    nav{
+        /* position: fixed; */
+        z-index: 3434343434;
+    }
+    .dropdown-content{
+     position: relative;
+      background-color: rgb(197, 197, 197);
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-links{
+      justify-content: center
+    }
+    .nav-links li{
+      margin: 20px 0px;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 10%;
+        top: 45px;
+        transform: translate(-5%, -50%);
+        z-index: 24343422;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #ffffff;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+  
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+  }
+  /*Animating Hamburger Icon on Click*/
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  }

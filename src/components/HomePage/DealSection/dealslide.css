@@ -1,0 +1,47 @@
+.slider2-main{
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px; 
+}
+.top span{
+    background-color: #144084;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 11px;
+}
+.top h5{
+    font-size: 14px;
+    color: #144084;
+    font-weight: bold;
+}
+.first{
+    border: 2px solid #0c3070;
+    border-radius: 7px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffff;
+}
+.bottom-inside img{
+    width: 100%;
+}
+.bottom button{
+    width:100%;
+    margin-top: 5px;
+    padding: 10px 0px;
+    border-radius: 7px;
+    border: none;
+    background-color: #144084;
+    color: #ffff;
+    cursor: pointer;
+    width: 101%;
+}
+.react-multi-carousel-track{
+    margin-bottom: 30px;
+}
