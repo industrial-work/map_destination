@@ -1,0 +1,32 @@
+.parent_about{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.first-child-about{
+    width: 40%;
+}
+.first-child-about p{
+    line-height: 1.6;
+}
+.first-child-about h1{
+    margin: 20px 0px;
+    color: #000f2c;
+}
+.parent_about img{ 
+    overflow: hidden;
+
+}
+
+@media only screen and (max-width: 870px) {
+    .parent_about{
+        flex-wrap: wrap;
+    }
+    
+    .first-child-about{
+        width: 100%;
+    }
+  }

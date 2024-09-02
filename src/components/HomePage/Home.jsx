@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import OfferSlider from './OfferSection/OfferSlide'
 import Banner from './Banner/Banner'
+import Footer from '../Footer/Footer'
 import Feature from './Feature/Feature'
+import About from './About/About'
 import OurServices from './OurServices/OurServices'
 import DealSlider from './DealSection/DealSlide'
 import './home.css'
@@ -136,6 +138,10 @@ function Home() {
               <div className="Feature">
                   <Feature/>
               </div>
+              <div className="About">
+                  <About/>
+              </div>
+              <Footer/>
               </>
             )}
 
@@ -192,6 +198,7 @@ function Home() {
             )}
 
       </div>
+      
     </>
   )
 }

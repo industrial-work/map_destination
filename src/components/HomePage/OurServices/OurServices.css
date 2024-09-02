@@ -24,6 +24,7 @@
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 .service-card img{
     border-radius: 30px;
     width: 100%;
@@ -61,4 +62,13 @@
     justify-content: space-evenly;
     margin: 0px 130px;
 
+}
+@media only screen and (max-width: 600px) {
+    .service-card{
+        width: 100%;
+    }
+    .services-main-card{
+        margin: 0px 30px;
+    
+    }
 }
