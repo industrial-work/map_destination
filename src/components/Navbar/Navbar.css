@@ -1,18 +1,7 @@
-
-  /* Navbar------------ */
-  /* #topnav{
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    border: 0;
-    transition: all .5s ease;
-  } */
-  .nav-container{
+.nav-container{
     display: flex;
       justify-content: center;
-      margin: 20px 35px 0px 35px;
+      margin: 10px 35px 10px 35px;
   }
   @media only screen and (max-width: 750px) {
     .nav-container{

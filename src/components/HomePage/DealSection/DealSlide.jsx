@@ -24,74 +24,81 @@ function DealSlide() {
       };
   return (
     <>
-    <Carousel className="slider" responsive={responsive}
-        showDots={true}
-        autoPlay={true}
-        autoPlaySpeed={1500}
-        infinite={true}
-        draggable={false}
-        ssr={true}
-        removeArrowOnDeviceType={ ["mobile", "desktop"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-        >
-    <div className="slider2-main">
-        <div className="first">
-            <div className="top">
-                <h5>Kashmir Delight</h5>
-                <span>6N/7D</span>
-            </div>
-            <div className="bottom-inside">
-                <img src="./images/image-c.jpeg" alt="" />
-            </div>
+     <div className="jackpot-main">
+        <div className="j-heading">
+            <h5 style={{textAlign:"center"}}>SAVE EXTRA WITH OUR EXCLUSIVE DEALS!</h5>
+            <h2 style={{textAlign:"center"}}>Jackpot Deals On Top Selling Packages</h2>
         </div>
-        <div className="bottom">
-            <button>View Details</button>
-        </div>
+        <Carousel className="slider" responsive={responsive}
+                    showDots={true}
+                    autoPlay={true}
+                    autoPlaySpeed={1500}
+                    infinite={true}
+                    draggable={false}
+                    ssr={true}
+                    removeArrowOnDeviceType={ ["mobile", "desktop"]}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                    >
+                <div className="slider2-main">
+                    <div className="first">
+                        <div className="top">
+                            <h5>Kashmir Delight</h5>
+                            <span>6N/7D</span>
+                        </div>
+                        <div className="bottom-inside">
+                            <img src="/images/image-c.jpeg" alt="" />
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div className="slider2-main">
+                    <div className="first">
+                        <div className="top">
+                            <h5>Kashmir Delight</h5>
+                            <span>6N/7D</span>
+                        </div>
+                        <div className="bottom-inside">
+                            <img src="/images/image-c.jpeg" alt="" />
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div className="slider2-main">
+                    <div className="first">
+                        <div className="top">
+                            <h5>Kashmir Delight</h5>
+                            <span>6N/7D</span>
+                        </div>
+                        <div className="bottom-inside">
+                            <img src="/images/image-c.jpeg" alt="" />
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div className="slider2-main">
+                    <div className="first">
+                        <div className="top">
+                            <h5>Kashmir Delight</h5>
+                            <span>6N/7D</span>
+                        </div>
+                        <div className="bottom-inside">
+                            <img src="/images/image-c.jpeg" alt="" />
+                        </div>
+                    </div>
+                    <div className="bottom">
+                        <button>View Details</button>
+                    </div>
+                </div>
+            </Carousel>
     </div>
-    <div className="slider2-main">
-        <div className="first">
-            <div className="top">
-                <h5>Kashmir Delight</h5>
-                <span>6N/7D</span>
-            </div>
-            <div className="bottom-inside">
-                <img src="./images/image-c.jpeg" alt="" />
-            </div>
-        </div>
-        <div className="bottom">
-            <button>View Details</button>
-        </div>
-    </div>
-    <div className="slider2-main">
-        <div className="first">
-            <div className="top">
-                <h5>Kashmir Delight</h5>
-                <span>6N/7D</span>
-            </div>
-            <div className="bottom-inside">
-                <img src="./images/image-c.jpeg" alt="" />
-            </div>
-        </div>
-        <div className="bottom">
-            <button>View Details</button>
-        </div>
-    </div>
-    <div className="slider2-main">
-        <div className="first">
-            <div className="top">
-                <h5>Kashmir Delight</h5>
-                <span>6N/7D</span>
-            </div>
-            <div className="bottom-inside">
-                <img src="./images/image-c.jpeg" alt="" />
-            </div>
-        </div>
-        <div className="bottom">
-            <button>View Details</button>
-        </div>
-    </div>
-</Carousel>
+    
     </>
   )
 }

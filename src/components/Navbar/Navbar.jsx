@@ -35,7 +35,7 @@ export default function Navbar() {
           <li><NavLink to="/aboutus" onClick={handleMenuItemClick}>About Us</NavLink>
           </li>
           <li><NavLink to="/blogs" onClick={handleMenuItemClick}>Blogs</NavLink></li>
-          <li><NavLink to="/csr" onClick={handleMenuItemClick}>CSR</NavLink></li>
+          <li><NavLink to="/services" onClick={handleMenuItemClick}>CSR</NavLink></li>
           <li><NavLink to="/partner" onClick={handleMenuItemClick}>Partner With Us</NavLink></li>
           <li><NavLink to="/helpline" onClick={handleMenuItemClick}>24x7Helpline</NavLink></li>
           <li><NavLink to="/more" onClick={handleMenuItemClick}>More</NavLink></li>

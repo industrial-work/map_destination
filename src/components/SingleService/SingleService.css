@@ -1,0 +1,110 @@
+.single-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    padding: 20px 10px;
+    
+
+}
+.single-head h3{
+    font-size: 23px;
+    font-weight: bolder;
+    margin:25px 0px;
+    text-align: center;
+}
+.single-head-para{
+    text-align: center;
+    width: 70%;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+/* -------------------COntent----- */
+.servfirst-parent{
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px;
+}
+.servfirst-img{
+    overflow: hidden;
+    width: 40%;
+}
+.servfirst-parent img{
+    width: 100%;
+    border: 2px solid #144084;
+    border-radius: 14px;
+}
+.servfirst-content{
+    width: 40%;
+}
+.servfirst-content h3{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.servfirst-content p{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 600px) {
+    .servfirst-parent{
+        flex-wrap: wrap;
+    }
+    .servfirst-img{
+        width: 100%;
+        overflow: hidden;
+    }
+    .servfirst-content{
+        width: 100%;
+    }
+}
+/* -------Table___------ */
+.servtable {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.servtable table th{
+    background-color:  #144084;
+    padding: 10px 200px;
+    color: #ffff;
+}
+.serv-tr td{
+    border: 3.4px solid #144084;
+    padding: 5px 200px;
+    text-align: center;
+    color: #144084;
+}
+@media only screen and (max-width: 600px) {
+    .servtable table th{
+        
+        padding: 10px 10px;
+    }
+    .serv-tr td{
+        
+        padding: 5px 10px;
+    }
+}
+/* ------------- */
+.centered-content {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px 30px;
+  }
+  
+  .centered-content div{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+  
+  .centered-content p {
+    max-width: 1100px;    /* Restricts the width of the paragraph */
+    margin: 0 auto;      /* Centers the paragraph by setting auto margins */
+  }
+  

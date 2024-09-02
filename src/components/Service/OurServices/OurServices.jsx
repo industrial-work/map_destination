@@ -1,5 +1,6 @@
 import React from 'react'
 import './OurServices.css'
+import { Link } from 'react-router-dom'
 
 function OurServices() {
   return (
@@ -14,37 +15,37 @@ function OurServices() {
                     <img src="./images/image-c.jpeg" alt="img" />
                     <h3>City Transport</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error facere ipsum...</p>
-                    <button>Read More</button>
+                    <Link to="/services/individual"><button>Read More</button></Link>
                 </div>
                 <div className="service-card">
                     <img src="./images/image-c.jpeg" alt="img" />
                     <h3>City Transport</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error facere ipsum...</p>
-                    <button>Read More</button>
+                    <Link to="/services/individual"><button>Read More</button></Link>
                 </div>
                 <div className="service-card">
                     <img src="./images/image-c.jpeg" alt="img" />
                     <h3>City Transport</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error facere ipsum...</p>
-                    <button>Read More</button>
+                    <Link to="/services/individual"><button>Read More</button></Link>
                 </div>
                 <div className="service-card">
                     <img src="./images/image-c.jpeg" alt="img" />
                     <h3>City Transport</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error facere ipsum...</p>
-                    <button>Read More</button>
+                    <Link to="/services/individual"><button>Read More</button></Link>
                 </div>
                 <div className="service-card">
                     <img src="./images/image-c.jpeg" alt="img" />
                     <h3>City Transport</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error facere ipsum...</p>
-                    <button>Read More</button>
+                    <Link to="/services/individual"><button>Read More</button></Link>
                 </div>
                 <div className="service-card">
                     <img src="./images/image-c.jpeg" alt="img" />
                     <h3>City Transport</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error facere ipsum...</p>
-                    <button>Read More</button>
+                    <Link to="/services/individual"><button>Read More</button></Link>
                 </div>
            </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Home } from './components'
+import { Home, Service, SingleService } from './components'
 import Layout from "./layout";
 import "./App.css";
 
@@ -11,7 +11,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route exact path="" element={<Home />} />
+          <Route  path="" element={<Home/>} />
+          <Route  path="services" element={<Service/>} />
+          <Route  path="services/individual" element={<SingleService/>} />
         </Route>
       </Routes>
     </Router>

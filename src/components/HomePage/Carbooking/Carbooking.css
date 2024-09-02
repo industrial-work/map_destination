@@ -1,0 +1,80 @@
+.main-book{
+    /* background: linear-gradient(to bottom, #08203b, #0f3764); */
+    /* height: 40vh; */
+}
+.car-radio-btn{
+    margin: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+.radio-option{
+    padding: 8px 12px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+.radio-option.active{
+    background-color: #1e69b4;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.carBooking-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.child1-carB{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    
+  }
+.labell{
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.inputt{
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 1px solid #757575;
+
+}
+.child2-carB{
+    display: flex;
+    flex-direction: column;
+}
+.child3-carB{
+    display: flex;
+    flex-direction: column;
+}
+.child4-carB{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.search-carB{
+    display: flex;
+    align-items: center;
+}
+.search-carB button{
+    border-radius: 5px;
+    padding: 12px 40px;
+    background: linear-gradient(to right, #47a5fa, #0a5ff0);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
