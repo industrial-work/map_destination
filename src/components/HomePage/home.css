@@ -1,13 +1,12 @@
 
 .h-main-container{
     background: linear-gradient(to bottom, #05192d, #0f3764);
-    height: 40vh;
+    padding-bottom: 50px;
     position: relative;
 }
 
 @media only screen and (max-width: 657px) {
     .h-main-container{
-        height: 85vh;
         margin-top: 100px;
     }
   }
@@ -50,11 +49,16 @@
 }
 .inner-white{
     background-color: #ffff;
-    width: 60%;
+    width: 70%;
     overflow: hidden;
     padding: 20px 30px; 
     border-radius: 10px;
 }
+@media only screen and (max-width: 750px) {
+    .inner-white{
+        width: 85%;
+    }
+  }
 /* ------------------------------- */
 .parent-pkg{
     display: flex;
@@ -118,7 +122,9 @@
     padding: 10px;
     border-radius: 6px;
     padding: 12px 18px;
-
+  }
+.nav-button.active:focus{
+    outline: none;
   }
 
   /* --------------------------------------------------------- */

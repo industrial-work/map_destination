@@ -3,25 +3,24 @@
     /* height: 40vh; */
 }
 .car-radio-btn{
-    margin: 15px 0px;
+    /* margin: 15px 0px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 50%;
+    /* width: 50%; */
 }
 .radio-option{
-    padding: 8px 12px;
+    padding: 10px 12px;
     border-radius: 7px;
     margin-bottom: 5px;
 }
 .radio-option.active{
     background-color: #1e69b4;
     color: white;
-    display: flex;
-    align-items: center;
-    padding: 8px 12px;
     border-radius: 7px;
-    margin-bottom: 5px;
+}
+label{
+    margin-bottom: 0px;
 }
 
 .carBooking-parent{

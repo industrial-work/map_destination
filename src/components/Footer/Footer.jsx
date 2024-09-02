@@ -14,22 +14,22 @@ const Footer = () => {
       <div className="contact-grid">
         <div className="contact-items">
           <i className="circle fas fa-phone-alt"></i>
-          <h4>CALL US NOW</h4>
+          <h6>CALL US NOW</h6>
           <p>+91 9315660204</p>
         </div>
         <div className="contact-items">
           <i className="circle fas fa-envelope"></i>
-          <h4>EMAIL US</h4>
+          <h6>EMAIL US</h6>
           <p>info@example.com</p>
         </div>
         <div className="contact-items">
           <i className="circle fas fa-book"></i>
-          <h4>BOOKING ENQUIRY</h4>
+          <h6>BOOKING ENQUIRY</h6>
           <p>Send Now</p>
         </div>
         <div className="contact-items">
           <i className="circle fas fa-share-alt"></i>
-          <h4>CONNECT VIA SOCIAL</h4>
+          <h6>CONNECT VIA SOCIAL</h6>
           <div className="social-icons">
             <i className="fab fa-facebook-f"></i>
             <i className="fab fa-twitter"></i>
@@ -55,7 +55,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-col">
-          <h4>Company</h4>
+          <h6>Company</h6>
           <ul>
             <li><Link to="#">About us</Link></li>
             <li><Link to="#">News</Link></li>
@@ -64,7 +64,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-col">
-          <h4>Contact</h4>
+          <h6>Contact</h6>
           <p>Office No. 603, GD Lorem ipsum dolor sit.</p>
           <p>255551984</p>
           <p>abc@gmail.com.com</p>

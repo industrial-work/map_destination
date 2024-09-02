@@ -70,11 +70,7 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
-@media only screen and (max-width: 400px) {
-    .offer-main-container{
-        margin-top: 70px;
-    }
-  }
+
  .offer-inner{
     border: 2px solid #96a2b2;
     width: 80%;
