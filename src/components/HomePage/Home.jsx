@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import OfferSlider from './OfferSection/OfferSlide'
+import OurServices from './OurServices/OurServices'
 import DealSlider from './DealSection/DealSlide'
 import './home.css'
 
@@ -38,130 +39,151 @@ function Home() {
         <div><span></span></div>
         <div><span></span></div>
       </div>
-        <div id="white-inside-container">
-          <div className='inner-white'>
-
+        
             {activeTab === "packages" && (
-              <div className='parent-pkg'>
-                  <div className="child1-pkg">
-                    <label className='labell' htmlFor="packages">Packages</label>
-                    <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
-                  </div>
+              <>
+                <div className="white-inside-container">
+                  <div className='inner-white'>
+                    <div className='parent-pkg'>
+                        <div className="child1-pkg">
+                          <label className='labell' htmlFor="packages">Packages</label>
+                          <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
+                        </div>
 
-                  <div className="child2-pkg">
-                    <label className='labell' htmlFor="date">Select Date</label>
-                    <input className='inputt' type="date" id='date' placeholder="" />
-                  </div>
+                        <div className="child2-pkg">
+                          <label className='labell' htmlFor="date">Select Date</label>
+                          <input className='inputt' type="date" id='date' placeholder="" />
+                        </div>
 
-                  <div className="child3-pkg">
-                    <label className='labell' htmlFor="guest">Guests and Rooms</label>
-                    <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
-                </div>
-                    <div className='search-pkg'>
-                      <button>Search</button>
+                        <div className="child3-pkg">
+                          <label className='labell' htmlFor="guest">Guests and Rooms</label>
+                          <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
+                      </div>
+                          <div className='search-pkg'>
+                            <button>Search</button>
+                          </div>
                     </div>
+                </div>
               </div>
+
+                  {/* Offer Section */}
+                  <div className="offer-main-container">
+                  <span className='span-offer'>Offers</span>
+                  <div className="offer-inner">
+                        <div className="offer-btn">
+                          <button className={`offer ${offerTab === "All" ? "active" : ""}`} 
+                            onClick={() => handleOfferbtn("All")}>All</button>
+
+                            <button className={`offer ${offerTab === "Cabs" ? "active" : ""}`}  
+                            onClick={() => handleOfferbtn("Cabs")}>Cabs</button>
+
+                            <button className={`offer ${offerTab === "Packge" ? "active" : ""}`}
+                            onClick={() => handleOfferbtn('Packge')}>Packages</button>
+
+                            <button className={`offer ${offerTab === "cards" ? "active" : ""}`}
+                            onClick={() => handleOfferbtn('cards')}>Gift Cards</button>
+                      </div>
+                          <OfferSlider/>
+                  </div>
+
+                  </div>
+  
+                  {/* Jackport Section */}
+                  <div className="jackpot-main">
+                      <div className="j-heading">
+                        <h5 style={{textAlign:"center"}}>SAVE EXTRA WITH OUR EXCLUSIVE DEALS!</h5>
+                        <h2 style={{textAlign:"center"}}>Jackpot Deals On Top Selling Packages</h2>
+                      </div>
+                      <DealSlider/>
+                  </div>
+    
+      </>
             )}
 
             {activeTab === "cars" && (
-              <div className='parent-pkg'>
-              <div className="child1-pkg">
-                <label className='labell' htmlFor="packages">Packages</label>
-                <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
-              </div>
-
-              <div className="child2-pkg">
-                <label className='labell' htmlFor="date">Select Date</label>
-                <input className='inputt' type="date" id='date' placeholder="" />
-              </div>
-
-              <div className="child3-pkg">
-                <label className='labell' htmlFor="guest">Guests and Rooms</label>
-                <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
-            </div>
-                <div className='search-pkg'>
-                  <button>Search</button>
+              <>
+              <div className="white-inside-container">
+                <div className='inner-white'>
+                  <div className='parent-pkg'>
+                <div className="child1-pkg">
+                  <label className='labell' htmlFor="packages">Packages</label>
+                  <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
                 </div>
-          </div>
+
+                <div className="child2-pkg">
+                  <label className='labell' htmlFor="date">Select Date</label>
+                  <input className='inputt' type="date" id='date' placeholder="" />
+                </div>
+
+                <div className="child3-pkg">
+                  <label className='labell' htmlFor="guest">Guests and Rooms</label>
+                  <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
+              </div>
+                  <div className='search-pkg'>
+                    <button>Search</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div className="OurServices">
+                  <OurServices/>
+              </div>
+              </>
             )}
 
             {activeTab === 'mice' && (
-              <div className='parent-pkg'>
+              <div className="white-inside-container">
+                <div className='inner-white'>
+                  <div className='parent-pkg'>
+                        <div className="child1-pkg">
+                          <label className='labell' htmlFor="packages">Packages</label>
+                          <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
+                        </div>
+                        
+                      <div className="child2-pkg">
+                        <label className='labell' htmlFor="date">Select Date</label>
+                        <input className='inputt' type="date" id='date' placeholder="" />
+                      </div>
 
-              <div className="child1-pkg">
-                <label className='labell' htmlFor="packages">Packages</label>
-                <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
-              </div>
-
-              <div className="child2-pkg">
-                <label className='labell' htmlFor="date">Select Date</label>
-                <input className='inputt' type="date" id='date' placeholder="" />
-              </div>
-
-              <div className="child3-pkg">
-                <label className='labell' htmlFor="guest">Guests and Rooms</label>
-                <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
-            </div>
-                <div className='search-pkg'>
-                  <button>Search</button>
+                      <div className="child3-pkg">
+                        <label className='labell' htmlFor="guest">Guests and Rooms</label>
+                        <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
+                    </div>
+                        <div className='search-pkg'>
+                          <button>Search</button>
+                        </div>
+                  </div>
                 </div>
-          </div>
+              </div>
             )}
 
             {activeTab === 'gift' && (
+            <div className="white-inside-container">
+                <div className='inner-white'>
+                  <div className='parent-pkg'>
+                      <div className="child1-pkg">
+                        <label className='labell' htmlFor="packages">Packages</label>
+                        <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
+                      </div>
 
-              <div className='parent-pkg'>
-              <div className="child1-pkg">
-                <label className='labell' htmlFor="packages">Packages</label>
-                <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
-              </div>
+                      <div className="child2-pkg">
+                        <label className='labell' htmlFor="date">Select Date</label>
+                        <input className='inputt' type="date" id='date' placeholder="" />
+                      </div>
 
-              <div className="child2-pkg">
-                <label className='labell' htmlFor="date">Select Date</label>
-                <input className='inputt' type="date" id='date' placeholder="" />
-              </div>
-
-              <div className="child3-pkg">
-                <label className='labell' htmlFor="guest">Guests and Rooms</label>
-                <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
+                      <div className="child3-pkg">
+                        <label className='labell' htmlFor="guest">Guests and Rooms</label>
+                        <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
+                      </div>
+                      <div className='search-pkg'>
+                        <button>Search</button>
+                      </div>
+                  </div>
+                 </div>
             </div>
-                <div className='search-pkg'>
-                  <button>Search</button>
-                </div>
-          </div>
             )}
-          </div>
-        </div>
+
       </div>
-      {/* Offer Section */}
-    <div className="offer-main-container">
-      <span className='span-offer'>Offers</span>
-      <div className="offer-inner">
-            <div className="offer-btn">
-              <button className={`offer ${offerTab === "All" ? "active" : ""}`} 
-                onClick={() => handleOfferbtn("All")}>All</button>
-
-                <button className={`offer ${offerTab === "Cabs" ? "active" : ""}`}  
-                onClick={() => handleOfferbtn("Cabs")}>Cabs</button>
-
-                <button className={`offer ${offerTab === "Packge" ? "active" : ""}`}
-                onClick={() => handleOfferbtn('Packge')}>Packages</button>
-
-                <button className={`offer ${offerTab === "cards" ? "active" : ""}`}
-                onClick={() => handleOfferbtn('cards')}>Gift Cards</button>
-          </div>
-              <OfferSlider/>
-      </div>
-
-    </div>
-    {/* Jackport Section */}
-    <div className="jackpot-main">
-        <div className="j-heading">
-          <h5 style={{textAlign:"center"}}>SAVE EXTRA WITH OUR EXCLUSIVE DEALS!</h5>
-          <h2 style={{textAlign:"center"}}>Jackpot Deals On Top Selling Packages</h2>
-        </div>
-        <DealSlider/>
-    </div>
     </>
   )
 }

@@ -3,9 +3,13 @@
     flex-wrap: wrap;
     margin-left: 15px;
     margin-bottom: 20px;
-    
 }
-
+@media only screen and (max-width: 500px) and (min-width: 350px) {
+    .main-slider{
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+  }
 .img-s{
     border-radius: 10px;
     width: 40%;
@@ -21,6 +25,11 @@
     align-items: self-start;
     width: 40%;
 }
+@media only screen and (max-width: 400px) {
+    .writes{
+        width: 50%;
+    }
+  }
 .heading-s h4{
     color: #144089;
     font-weight: bold;
