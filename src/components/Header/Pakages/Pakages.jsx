@@ -1,9 +1,24 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import './Pakages.css'
 
 function Pakages() {
     const [activeTab, setActiveTab] = useState("packages");
+
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [rooms, setRooms] = useState(0);
+    const [adults, setAdults] = useState(0);
+    const [children, setChildren] = useState(0);
+    const [infants, setInfants] = useState(0);
+  
+    // Handlers for incrementing and decrementing values
+    const increment = (setter, value) => setter(value + 1);
+    const decrement = (setter, value) => {
+      if (value > 0) setter(value - 1);
+    };
  
+    const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
 
     const handleTabClick = (tab) => {
       setActiveTab(tab);
@@ -39,15 +54,59 @@ function Pakages() {
                         </div>
 
                         <div className="child3-pkg">
-                          <label className='labell' htmlFor="guest">Guests and Rooms</label>
-                          <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
+                        <div >
+                          <div className="labell">Guests and Rooms</div>
+                          <div  className="inpu" onClick={toggleDropdown}>{adults} Adults - {children} Children</div>
+                          {isDropdownOpen && (
+                            <>   
+                            <div className="inner-drop" >      
+                                <div className="input-group">
+                                  <label><span>Rooms</span></label>
+                                  <div className="counter">
+                                    <button onClick={() => decrement(setRooms, rooms)}>-</button>
+                                    <span>{rooms}</span>
+                                    <button onClick={() => increment(setRooms, rooms)}>+</button>
+                                  </div>
+                                </div>
+                                <div className="combine-grp">
+                                  <div className="input-group">
+                                    <label><span>Adults</span> Above 12 years</label>
+                                    <div className="counter">
+                                      <button onClick={() => decrement(setAdults, adults)}>-</button>
+                                      <span>{adults}</span>
+                                      <button onClick={() => increment(setAdults, adults)}>+</button>
+                                    </div>
+                                  </div>
+
+                                  <div className="input-group">
+                                    <label><span>Children</span> Below 12 years</label>
+                                    <div className="counter">
+                                      <button onClick={() => decrement(setChildren, children)}>-</button>
+                                      <span>{children}</span>
+                                      <button onClick={() => increment(setChildren, children)}>+</button>
+                                    </div>
+                                </div>
+                                </div>
+                                <div className="input-group">
+                                  <label><span>Infants</span> Less than 2 years</label>
+                                  <div className="counter">
+                                    <button onClick={() => decrement(setInfants, infants)}>-</button>
+                                    <span>{infants}</span>
+                                    <button onClick={() => increment(setInfants, infants)}>+</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </>
+                          )}
+                        </div>
                       </div>
                           <div className='search-pkg'>
-                            <button>Search</button>
+                            <Link to='/SelectedArea'><button>Search</button></Link>
                           </div>
                     </div>
                 </div>
         </div>
+        
     </div>
     
     </>
