@@ -26,12 +26,7 @@
     font-size: 14px;
     top: 8px;
 }
-@media only screen and (max-width: 750px) {
-    .inner-header-btn{
-        width: 75%;
-        margin-left: 22px;
-    }
-  }
+
 
 .inner-header-btn button {
     background-color: transparent;
@@ -42,7 +37,18 @@
     padding: 10px 23px;
     cursor: pointer;
 }
-
+@media only screen and (max-width: 750px) {
+    .inner-header-btn{
+        width: 75%;
+        margin-left: 22px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inner-header-btn button {
+       
+        margin-top: 5px;
+    }
+  }
 .white-inside-container{
     width: 100%;
     display: flex;

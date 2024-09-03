@@ -2,6 +2,11 @@
     padding: 40px;
     background-color: #f9f9f9;
 }
+@media only screen and (max-width:400px) {
+    .parent_services{
+        padding: 10px;
+    }
+}
 .services-heading{
     display: flex;
     flex-direction: column;
