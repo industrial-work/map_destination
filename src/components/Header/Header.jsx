@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Pakages from './Pakages/Pakages'
 import Carbooking from '../HomePage/Carbooking/Carbooking'
 
 
@@ -13,7 +14,7 @@ function Header() {
     
   return (
     <>
-    <div className="h-main-container">
+    {/* <div className="h-main-container">
       <div id="header-button">
         <div className="inner-header-btn">
 
@@ -34,30 +35,7 @@ function Header() {
       </div>
             {activeTab === "packages" && (
               <>
-                <div className="white-inside-container">
-                  <div className='inner-white'>
-                    <div className='parent-pkg'>
-                        <div className="child1-pkg">
-                          <label className='labell' htmlFor="packages">Packages</label>
-                          <input className='inputt' type="text" id='packages' placeholder="Select Package..." />
-                        </div>
-
-                        <div className="child2-pkg">
-                          <label className='labell' htmlFor="date">Select Date</label>
-                          <input className='inputt' type="date" id='date' placeholder="" />
-                        </div>
-
-                        <div className="child3-pkg">
-                          <label className='labell' htmlFor="guest">Guests and Rooms</label>
-                          <input className='inputt' type="text" id='guest' placeholder="0 Adult - 0 Child" />
-                      </div>
-                          <div className='search-pkg'>
-                            <button>Search</button>
-                          </div>
-                    </div>
-                </div>
-              </div>
-    
+                <Pakages/>
       </>
             )}
 
@@ -119,7 +97,7 @@ function Header() {
             </div>
             )}
 
-      </div>
+      </div> */}
     </>
   )
 }

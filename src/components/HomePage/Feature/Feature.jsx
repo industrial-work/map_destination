@@ -35,6 +35,7 @@ const Feature = () => {
       <div className="overlay"></div>
       <div className="features-container">
         <h2>Our Awesome Feature</h2>
+        <div className="heading-divider"></div>
         <div className="features-grid">
           {featuresData.map((feature, index) => (
             <div key={index} className="feature-card">

@@ -1,27 +1,27 @@
 import React from 'react'
-import Header from '../Header/Header';
-import OurServices from './OurServices/OurServices';
+import Cars from '../Header/Cars/Cars';
+import OurServices from '../HomePage/OurServices/OurServices';
 import Banner from './Banner/Banner'
-import Feature from './Feature/Feature'
-import About from './About/About'
+import Feature from '../HomePage/Feature/Feature'
+// import About from './About/About'
 import Footer from '../Footer/Footer'
 
 function Service() {
 
   return (
     <>
-      <Header/>
-       <div className="OurServices">
-          <OurServices/>
+      <Cars/>
+       <div className="OurServices"  >
+          <OurServices name={"SERVICES"}/>
        </div>
-       <div className="Banner">
+          {/* <div className="Feature"> */}
+              <Feature/>
+          {/* </div> */}
+          <div className="Banner">
               <Banner/>
           </div>
-          <div className="Feature">
-              <Feature/>
-          </div>
           <div className="About">
-              <About/>
+              {/* <About/> */}
           </div>
         <Footer/>
     </>

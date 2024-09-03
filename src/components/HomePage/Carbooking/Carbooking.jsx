@@ -30,7 +30,7 @@ const Carbooking = () => {
                 </span>
 
                 <span
-                    className={`radio-option ${selected === 'hourly-rental' ? 'active' : ''}`}
+                    className={`radio-option r2 ${selected === 'hourly-rental' ? 'active' : ''}`}
                 >
                     <input
                     type="radio"

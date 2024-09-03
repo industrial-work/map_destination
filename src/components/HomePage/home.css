@@ -19,10 +19,11 @@
     
 }
 .inner-header-btn{
-    width: 30%;
+    /* width: 30%; */
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    font-size: 14px;
     top: 8px;
 }
 @media only screen and (max-width: 750px) {
@@ -38,6 +39,7 @@
     color: #ffff;
     font-weight: bold;
     margin-top: 30px;
+    padding: 10px 23px;
     cursor: pointer;
 }
 
@@ -54,6 +56,25 @@
     padding: 20px 30px; 
     border-radius: 10px;
 }
+.nav-button.active {
+    background-color: white;
+    color: #f0911e;
+    border-radius: 6px;
+
+  }
+  .nav-button{
+    margin-right: 7px;
+    transition: all 0.3s;
+  }
+.nav-button:hover {
+    background-color: white;
+    color: #f0911e;
+    border-radius: 6px;
+
+  }
+.nav-button:focus{
+    outline: none;
+  }
 @media only screen and (max-width: 750px) {
     .inner-white{
         width: 85%;
@@ -72,7 +93,7 @@
 }
 
 .child1-pkg input{
-    width: 230px;
+    /* width: 230px; */
 }
 @media only screen and (max-width: 550px) {
     .child1-pkg input{
@@ -116,16 +137,7 @@
     margin-top: 15px;
 }
 
-.nav-button.active {
-    background-color: white;
-    color: #f0911e;
-    padding: 10px;
-    border-radius: 6px;
-    padding: 12px 18px;
-  }
-.nav-button.active:focus{
-    outline: none;
-  }
+
 
   /* --------------------------------------------------------- */
 
@@ -133,13 +145,13 @@
 /* =---------------------------------- */
 .jackpot-main{
     background-color: #d7d9db;
-    height: 60vh;
-    margin-bottom: 20px;
+    height: 70vh;
+    /* margin-bottom: 20px; */
 }
 .j-heading{
    position: relative;
    top: 20px;
-   color: #0c3070;
+   color: #1c6ab3;
 }
 .j-heading h2{
    font-weight: bold;
@@ -151,4 +163,7 @@
 }
 
 
-
+.icon{
+    font-size: 18px;
+    margin-right: 5px;
+}

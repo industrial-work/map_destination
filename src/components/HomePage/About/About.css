@@ -14,7 +14,9 @@
 }
 .first-child-about h1{
     margin: 20px 0px;
-    color: #000f2c;
+    font-size: 35px;
+    color: #1d6bb3;
+    font-weight: 700;
 }
 .parent_about img{ 
     overflow: hidden;

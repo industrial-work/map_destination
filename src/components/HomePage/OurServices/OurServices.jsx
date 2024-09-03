@@ -2,13 +2,14 @@ import React from 'react'
 import './OurServices.css'
 import { Link } from 'react-router-dom'
 
-function OurServices() {
+function OurServices(props) {
   return (
     <>
         <div className="parent_services">
            <div className="services-heading">
-            <h4>SERVICES</h4>
+            <h4>{props.name}</h4>
             <h2>Our Best Services For You</h2>
+           <div className="service-heading-divider"></div>
            </div>
            <div className="services-main-card">
                 <div className="service-card">

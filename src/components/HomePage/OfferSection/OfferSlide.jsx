@@ -33,7 +33,7 @@ function OfferSlide() {
   return ( 
   <> 
     <div className="offer-main-container">
-      <span className='span-offer'>Offers</span>
+    <span className='span-offer'>Offers</span>
           <div className="offer-inner">
                 <div className="offer-btn">
                   <button className={`offer ${offerTab === "All" ? "active" : ""}`} 

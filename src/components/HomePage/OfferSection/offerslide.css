@@ -95,8 +95,23 @@
     border-radius: 4px;
     font-weight: 700;
  }
+ .offer{
+    transition: all 0.3s;
+}
+ .offer:focus{
+    outline: none;
+}
+ .offer:hover{
+    background-color: #1c6ab3;
+    color: #ffffff;
+    border: none;
+    padding: 7px 22px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+}
  .offer.active{
-    background-color: #144084;
+    background-color: #1c6ab3;
     color: #ffffff;
     border: none;
     padding: 7px 22px;
