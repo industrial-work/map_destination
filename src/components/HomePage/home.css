@@ -121,6 +121,8 @@
     padding: 10px 15px;
     border-radius: 3px;
     margin-bottom: 2px;
+    color: #000000;
+    background-color: #ffff;
     border: 1px solid #757575;
 }
 .child2-pkg{
