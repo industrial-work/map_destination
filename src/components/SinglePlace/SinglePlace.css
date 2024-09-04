@@ -31,23 +31,30 @@
 }
 /* ----------------------------------- */
 .parent-main-single{
-border: 2px solid red;
+/* border: 2px solid red; */
     height: 100vh;
     display: flex;
+
 }
+
 .first-singlepage-child{
-    border: 2px solid rgb(47, 0, 255);
+    /* border: 2px solid rgb(47, 0, 255); */
+    margin-left: 90px;
     flex-grow: 1;
 }
+.midd{
+  flex-grow: 1;
+  width: 200px;
+
+
+}
 .second-singlepage-child{
-    border: 2px solid rgb(0, 255, 17);
+    /* border: 2px solid rgb(0, 255, 17); */
     flex-grow: 2;
 }
 
 .slider-container {
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 8px;
+    padding: 5px;
     width: 250px;
   }
   
@@ -61,5 +68,104 @@ border: 2px solid red;
     justify-content: space-between;
     margin-top: 10px;
   }
+.first-singlepage-child{
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+}
+  .f-child-fir{
+    border-radius: 8px;
+    /* flex-wrap: wrap; */
+    /* overflow: hidden; */
+    background-color: #f2f2f2;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .slider-container label{
+    font-size: 22px;
+    font-weight: 900;
+    color: #0d233e;
+    margin-bottom: 10px;
+  }
+  .slider-label span{
+    color: #195196;
+  }
+  .check-package{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    color: #195196;
+  }
+  .check-package label{
+    margin-left: 5px;
+  }
+  .package-cards-section{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .single-package-card{
+    padding: 20px;
+    width: 280px;
+    background-color: #195196;
+    color: #ffff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
   
-  
+  .rc-slider-track, .rc-slider-tracks{
+    color: #3686f8;
+  }
+  .rc-slider-handle{
+    border: 2px solid #123f83;
+    width: 17px ;
+    height: 17px;
+    background-color: #ffff;
+    top: 4px;
+
+  }
+
+  @media only screen and (max-width:700px) {
+    .parent-main-single{
+      
+          flex-wrap: wrap;
+      }
+      .first-singlepage-child{
+
+        margin-left: 0px;
+
+    }
+    .inner-white-single{
+      width: 88%;
+      padding: 30px 40px;
+  }
+  .inner-drop{
+    width: 340px;
+    left: 1px;
+  }
+  .middle-content{
+    left: 30px;
+  }
+  .package-cards-section{
+        justify-content: center;
+        margin-top: 40px ;
+  }
+  .single-package-card{
+        margin-right: 0px ;
+  }
+  .first-singlepage-child{
+    height: 95vh;
+}
+  }
