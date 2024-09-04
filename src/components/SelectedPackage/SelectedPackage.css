@@ -1,0 +1,190 @@
+.image-re{
+    width: 100% !important;
+    height: 210px !important;
+    position: relative;
+    overflow: hidden;
+}
+.Sele-content{
+    position: absolute;
+    top: 140px;
+    font-size: 23px;
+    left: 95px;
+    color: #ffff;
+    z-index: 23;
+}
+.sele-main-parent{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.sele-first{
+    /* border: 2px solid green; */
+    flex-grow: 2;
+    padding: 20px;
+    margin: 0px 37px;
+}
+.sele-second{
+    /* border: 2px solid rgb(19, 0, 128); */
+    flex-grow: 1;
+    margin-top: 20px;
+}
+.packageN p{
+    font-weight: bolder;
+    font-size: 33px;
+    color: #144084;
+    margin-bottom: 0px;
+}
+.package-name p{
+    color: black;
+
+}
+.hrr{
+    margin-top: 0px;
+    border: 1px solid black;
+    margin-bottom: 3px;
+}
+.room-parent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.roomseg{
+    display: flex;
+}
+.roomseg p{
+    color: #144084;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1px 5px;
+}
+.datee p{
+    display: flex;
+    font-size: 13px;
+    font-weight: 800;
+    flex-direction: column;
+    align-items: end;
+    padding: 6px 0px;
+}
+.flex-add{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 14px 0px;
+}
+.flex-add h4{
+    color: #144084;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1px 5px;
+}
+.flex-add button{
+    background-color: #144084;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.detail-container{
+    border: 2px solid black;
+}
+.inner-contact{
+    padding: 20px;
+}
+.detail-input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.detail-input input{
+    padding: 6px;
+    background-color: #ececec;
+    border: 2px solid #8f8b89;
+}
+.detail-input input:focus{
+    outline: none;
+}
+.contact-details p{
+    color: #144084;
+    margin: 8px 0px;
+    font-weight: 800;
+}
+/* --------------- */
+.package-details p{
+    color: #144084;
+    font-size: 17px;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+.promo{
+    padding: 30px 10px;
+    width: 300px;
+}
+.promo-input{
+    display: flex;
+    justify-content: space-between;
+}
+.promo-input input{
+   width: 150px;
+   padding: 3px;
+   background-color: #ececec;
+    border: 2px solid #8f8b89;
+}
+.promo-input input:focus{
+  outline: none;
+}
+.promo-input button{
+  padding: 0px 10px;
+  color: #fff;
+  background-color: #144084;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.promo-codes{
+    margin-top: 13px;
+    border: 2px solid black;
+}
+.inner-pr-co{
+padding: 10px;
+}
+.inner-pr-co h4{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.inner-pr-co p{
+    font-size: 13px;
+}
+.flexx{
+    display: flex;
+    justify-content: space-between;
+}
+.flexx button{
+  color: #fff;
+  padding: 0px 10px !important;
+  background-color: #144084;
+  border: none;
+  border-radius: 40%;
+  font-size: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:550px) {
+    .sele-second{
+        display: flex;
+        justify-content: center;
+    }
+    .detail-input input{
+       margin-bottom: 10px;
+    }
+    .datee p {
+        align-items: start;
+        padding: 0px 0px;
+    }
+}

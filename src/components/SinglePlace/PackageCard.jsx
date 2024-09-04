@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function PackageCard({ packageName, date, rooms, adults, children, infants, themes, places, price }) {
+function PackageCard({ packageName, date, rooms, adults, children, infants, themes, places, packageN, price }) {
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -15,14 +15,14 @@ function PackageCard({ packageName, date, rooms, adults, children, infants, them
                 infants, 
                 themes, 
                 places,
-                price 
+                price,packageN
             } 
         });
     };
 
     return (
         <div className="single-package-card" onClick={handleClick}>
-            <p>{packageName}</p>
+            <p>{packageN}</p>
             <p>Price:{price}</p>
         </div>
     );

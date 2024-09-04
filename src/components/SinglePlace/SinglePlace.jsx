@@ -337,7 +337,8 @@ function SinglePlace() {
                 <div className="second-singlepage-child">
                     <div className="package-cards-section">
                         <PackageCard 
-                            packageName='Premium Packges'
+                            packageName={packageName}
+                            packageN="Premium Package"
                             price='₹16000'
                             date={date}
                             rooms={rooms}
@@ -348,7 +349,8 @@ function SinglePlace() {
                             places={places}
                         />
                         <PackageCard 
-                            packageName='Luxury Packges'
+                            packageName={packageName}
+                            packageN="Luxury Packges"
                             price='₹14000'
                             date={date}
                             rooms={rooms}
@@ -359,7 +361,8 @@ function SinglePlace() {
                             places={places}
                         />
                         <PackageCard 
-                            packageName='Luxury Packges'
+                            packageName={packageName}
+                            packageN="Luxury Packges"
                             price='₹14000'
                             date={date}
                             rooms={rooms}
@@ -370,8 +373,21 @@ function SinglePlace() {
                             places={places}
                         />
                         <PackageCard 
-                            packageName='Luxury Packges'
-                            price='₹14000'
+                            packageName={packageName}
+                            packageN="Premium Package"
+                            price='₹16000'
+                            date={date}
+                            rooms={rooms}
+                            adults={adults}
+                            children={children}
+                            infants={infants}
+                            themes={themes}
+                            places={places}
+                        />
+                       <PackageCard 
+                            packageName={packageName}
+                            packageN="Premium Package"
+                            price='₹16000'
                             date={date}
                             rooms={rooms}
                             adults={adults}
@@ -381,8 +397,9 @@ function SinglePlace() {
                             places={places}
                         />
                         <PackageCard 
-                            packageName='Luxury Packges'
-                            price='₹14000'
+                            packageName={packageName}
+                            packageN="Premium Package"
+                            price='₹16000'
                             date={date}
                             rooms={rooms}
                             adults={adults}
@@ -392,8 +409,9 @@ function SinglePlace() {
                             places={places}
                         />
                         <PackageCard 
-                            packageName='Luxury Packges'
-                            price='₹14000'
+                            packageName={packageName}
+                            packageN="Premium Package"
+                            price='₹16000'
                             date={date}
                             rooms={rooms}
                             adults={adults}
@@ -403,19 +421,9 @@ function SinglePlace() {
                             places={places}
                         />
                         <PackageCard 
-                            packageName='Luxury Packges'
-                            price='₹14000'
-                            date={date}
-                            rooms={rooms}
-                            adults={adults}
-                            children={children}
-                            infants={infants}
-                            themes={themes}
-                            places={places}
-                        />
-                        <PackageCard 
-                            packageName='Luxury Packges'
-                            price='₹14000'
+                            packageName={packageName}
+                            packageN="Premium Package"
+                            price='₹16000'
                             date={date}
                             rooms={rooms}
                             adults={adults}
