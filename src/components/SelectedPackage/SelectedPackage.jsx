@@ -1,12 +1,37 @@
 import React, {useState} from 'react'
 import { useLocation } from 'react-router-dom';
-import './SelectedPackage.css'
+import './SelectedPackage.css';
+import PopUp from '../PopUp/PopUp'
 
 function SelectedPackage() {
     const location = useLocation();
     const { state } = location;
 
+    const adult = state?.adults;
+
     const [traveler, setTraveler] = useState({ name: '', phone: '', email: '' });
+    const [buttonPopup , setButtonPopup] = useState(false)
+
+            const [activeButtonIndex, setActiveButtonIndex] = useState(null);
+                // State to hold the input data for each button
+            const [formData, setFormData] = useState(
+                Array(adult).fill({ name: '', age: '', gender: '' })
+            );
+
+            const handleButtonClick = (index) => {
+                setActiveButtonIndex(index); // Set the clicked button index
+            };
+
+            const handleInput = (e, index) => {
+                const { name, value } = e.target;
+                const updatedFormData = [...formData];
+                updatedFormData[index] = { ...updatedFormData[index], [name]: value };
+                setFormData(updatedFormData); // Update form data for the specific button
+            };
+                console.log(formData)
+
+    //   ==========================================
+
 
         const handleInputChange = (e) => {
             setTraveler({ ...traveler, [e.target.name]: e.target.value });
@@ -50,9 +75,54 @@ function SelectedPackage() {
                 <hr className='hrr'  />
                 <div className="flex-add">
                 <h4>Traveler 1 - 12*</h4>
-                <button>Add Details</button>
+                <button onClick={()=>setButtonPopup(true)}>Add Details</button>
                 </div>
-                
+
+                <PopUp trigger={buttonPopup} setTrigger={setButtonPopup} >
+                    <div className="pop-parent">
+                        <div className="pop-parent-inner">
+                        <h2>Traveler Details:</h2>
+                        <div className="pop-btn">
+                            {
+                            Array.from({ length: adult }, (_, index) => (
+                                
+                                    <div className='pop-btn-inner' key={index}>
+                                    <button onClick={() => handleButtonClick(index)}>Adult {index + 1}</button>
+                            
+                            {activeButtonIndex === index && (
+                                <>
+                                <h4>Adult{index+1}</h4>
+                                    <div className="form-container">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Name"
+                                        value={formData[index].name}
+                                        onChange={(e) => handleInput(e, index)}
+                                    />
+                                    <input
+                                        type="number"
+                                        name="age"
+                                        placeholder="Age"
+                                        value={formData[index].age}
+                                        onChange={(e) => handleInput(e, index)}
+                                    />
+                                    <input
+                                        type="text"
+                                        name="gender"
+                                        placeholder="Gender"
+                                        value={formData[index].gender}
+                                        onChange={(e) => handleInput(e, index)}
+                                    />
+                                    </div>
+                                </>
+                            )}
+                            </div>
+                            ))}
+                         </div>
+                         </div>
+                    </div>
+                </PopUp>
                 <div className="detail-container">
                     <div className="inner-contact">
                 <div className="contact-details">

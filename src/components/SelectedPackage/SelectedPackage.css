@@ -10,7 +10,7 @@
     font-size: 23px;
     left: 95px;
     color: #ffff;
-    z-index: 23;
+    z-index: 1;
 }
 .sele-main-parent{
     /* border: 2px solid red; */
@@ -187,4 +187,30 @@ padding: 10px;
         align-items: start;
         padding: 0px 0px;
     }
+}
+/* -----------POP Style------ */
+.pop-parent{
+    border: 2px solid black;
+    /* box-sizing: border-box; */
+    
+
+}
+.pop-parent-inner{
+    padding: 40px;
+    overflow: hidden;
+}
+.pop-parent-inner h2{
+   font-size: 20px;
+}
+.pop-btn{
+    /* border: 1px solid red; */
+    display: flex;
+}
+.pop-btn-inner{
+    /* border: 1px solid rgb(0, 255, 128); */
+}
+.form-container{
+    position: absolute;
+    display: flex;
+    top: 140px;
 }
