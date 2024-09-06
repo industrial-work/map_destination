@@ -5,42 +5,58 @@ import PopUp from '../PopUp/PopUp'
 
 function SelectedPackage() {
     const location = useLocation();
-    const { state } = location;
+  const { state } = location;
 
-    const adult = state?.adults;
+  const adult = state?.adults;
+  const child = state?.children;
 
-    const [traveler, setTraveler] = useState({ name: '', phone: '', email: '' });
-    const [buttonPopup , setButtonPopup] = useState(false)
+  const [traveler, setTraveler] = useState({ name: '', phone: '', email: '' });
+  const [buttonPopup, setButtonPopup] = useState(false);
 
-            const [activeButtonIndex, setActiveButtonIndex] = useState(null);
-                // State to hold the input data for each button
-            const [formData, setFormData] = useState(
-                Array(adult).fill({ name: '', age: '', gender: '' })
-            );
+  const [activeButtonIndex, setActiveButtonIndex] = useState(0);
+  const [childButton, setChildButton] = useState(0);
 
-            const handleButtonClick = (index) => {
-                setActiveButtonIndex(index); // Set the clicked button index
-            };
+  // Separate state for adults and children
+  const [adultData, setAdultData] = useState(
+    Array(adult).fill({ name: '', age: '', gender: '' })
+  );
+  const [childData, setChildData] = useState(
+    Array(child).fill({ name: '', age: '', gender: '' })
+  );
 
-            const handleInput = (e, index) => {
-                const { name, value } = e.target;
-                const updatedFormData = [...formData];
-                updatedFormData[index] = { ...updatedFormData[index], [name]: value };
-                setFormData(updatedFormData); // Update form data for the specific button
-            };
-                console.log(formData)
+  const handleButtonClick = (index) => {
+    setActiveButtonIndex(index); // Set the clicked button index for adults
+  };
+  
+  const handleChildClick = (index) => {
+    setChildButton(index); // Set the clicked button index for children
+  };
 
-    //   ==========================================
+  const handleAdultInput = (e, index) => {
+    const { name, value } = e.target;
+    const updatedAdultData = [...adultData];
+    updatedAdultData[index] = { ...updatedAdultData[index], [name]: value };
+    setAdultData(updatedAdultData); // Update adult data for the specific button
+  };
+  console.log(adultData)
 
+  const handleChildInput = (e, index) => {
+    const { name, value } = e.target;
+    const updatedChildData = [...childData];
+    updatedChildData[index] = { ...updatedChildData[index], [name]: value };
+    setChildData(updatedChildData); // Update child data for the specific button
+  };
+  console.log(childData)
 
-        const handleInputChange = (e) => {
-            setTraveler({ ...traveler, [e.target.name]: e.target.value });
-        };
+  const handleInputChange = (e) => {
+    setTraveler({ ...traveler, [e.target.name]: e.target.value });
+  };
 
-        const handleSubmit = (e) => {
-            e.preventDefault();
-            // addTraveler(traveler);
-        };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setButtonPopup(false);
+    // Here you could add logic to store the data, send it to a server, etc.
+  };
 
   return (
     <> 
@@ -78,51 +94,122 @@ function SelectedPackage() {
                 <button onClick={()=>setButtonPopup(true)}>Add Details</button>
                 </div>
 
-                <PopUp trigger={buttonPopup} setTrigger={setButtonPopup} >
+                
+
+                <PopUp trigger={buttonPopup} setTrigger={setButtonPopup}>
                     <div className="pop-parent">
-                        <div className="pop-parent-inner">
+                    <div className="pop-parent-inner">
                         <h2>Traveler Details:</h2>
                         <div className="pop-btn">
-                            {
-                            Array.from({ length: adult }, (_, index) => (
-                                
-                                    <div className='pop-btn-inner' key={index}>
-                                    <button onClick={() => handleButtonClick(index)}>Adult {index + 1}</button>
-                            
+                        {Array.from({ length: adult }, (_, index) => (
+                            <div className={`pop-btn-inner ${activeButtonIndex === index ? 'active' : ''}`} key={index}>
+                            <button onClick={() => handleButtonClick(index)}>
+                                {activeButtonIndex !== index ? `${index + 1}` : `Adult ${index + 1}`}
+                            </button>
                             {activeButtonIndex === index && (
                                 <>
-                                <h4>Adult{index+1}</h4>
-                                    <div className="form-container">
-                                    <input
+                                <div className="form-container">
+                                    <h4>Adult {index + 1} Details:</h4>
+                                    <div className="form-cont-in">
+                                    <div className="iput-form">
+                                        <label htmlFor={`name${index}`}>Name:</label>
+                                        <input
                                         type="text"
                                         name="name"
                                         placeholder="Name"
-                                        value={formData[index].name}
-                                        onChange={(e) => handleInput(e, index)}
-                                    />
-                                    <input
+                                        value={adultData[index].name}
+                                        onChange={(e) => handleAdultInput(e, index)}
+                                        />
+                                    </div>
+                                    <div className="iput-form">
+                                        <label htmlFor={`age${index}`}>Age:</label>
+                                        <input
                                         type="number"
                                         name="age"
                                         placeholder="Age"
-                                        value={formData[index].age}
-                                        onChange={(e) => handleInput(e, index)}
-                                    />
-                                    <input
-                                        type="text"
-                                        name="gender"
-                                        placeholder="Gender"
-                                        value={formData[index].gender}
-                                        onChange={(e) => handleInput(e, index)}
-                                    />
+                                        value={adultData[index].age}
+                                        onChange={(e) => handleAdultInput(e, index)}
+                                        />
                                     </div>
+                                    <div className="iput-form">
+                                        <label htmlFor={`gender${index}`}>Gender:</label>
+                                        <select
+                                        name="gender"
+                                        value={adultData[index].gender}
+                                        onChange={(e) => handleAdultInput(e, index)}
+                                        id={`gender${index}`}
+                                        >
+                                        <option value="" disabled>Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                </div>
                                 </>
                             )}
                             </div>
+                        ))}
+                        </div>
+                        <div className="zarar">
+                        <div className="pop-btn">
+                            {Array.from({ length: child }, (_, index) => (
+                            <div className={`pop-btn-inner ${childButton === index ? 'active' : ''}`} key={index}>
+                                <button onClick={() => handleChildClick(index)}>
+                                {childButton !== index ? `${index + 1}` : `Child ${index + 1}`}
+                                </button>
+                                {childButton === index && (
+                                <>
+                                    <div className="form-container-child">
+                                    <h4>Child {index + 1} Details:</h4>
+                                    <div className="form-cont-in">
+                                        <div className="iput-form">
+                                        <label htmlFor={`name${index}`}>Name:</label>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Name"
+                                            value={childData[index].name}
+                                            onChange={(e) => handleChildInput(e, index)}
+                                        />
+                                        </div>
+                                        <div className="iput-form">
+                                        <label htmlFor={`age${index}`}>Age:</label>
+                                        <input
+                                            type="number"
+                                            name="age"
+                                            placeholder="Age"
+                                            value={childData[index].age}
+                                            onChange={(e) => handleChildInput(e, index)}
+                                        />
+                                        </div>
+                                        <div className="iput-form">
+                                        <label htmlFor={`gender${index}`}>Gender:</label>
+                                        <select
+                                            name="gender"
+                                            value={childData[index].gender}
+                                            onChange={(e) => handleChildInput(e, index)}
+                                            id={`gender${index}`}
+                                        >
+                                            <option value="" disabled>Select Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </>
+                                )}
+                            </div>
                             ))}
-                         </div>
-                         </div>
+                        </div>
+                        </div>
+                    </div>
                     </div>
                 </PopUp>
+
                 <div className="detail-container">
                     <div className="inner-contact">
                 <div className="contact-details">
@@ -156,6 +243,19 @@ function SelectedPackage() {
                 </div>
                     </div>
                 </div>
+                 {/* Display Adult Data Here */}
+                 {/* <div className="adult-data">
+                        <h2>Adult Details</h2>
+                        {adultData.map((item, index) => (
+                            <div key={index}>
+                                <h3>Adult {index + 1}</h3>
+                                <p><strong>Name:</strong> {item.name}</p>
+                                <p><strong>Age:</strong> {item.age}</p>
+                                <p><strong>Gender:</strong> {item.gender}</p>
+                            </div>
+                        ))}
+                    </div> */}
+                
             <div className="sele-second">
                 <div className="promo">
                 <div className="package-details">
@@ -189,17 +289,6 @@ function SelectedPackage() {
            
             </div>
         </div>
-        {/* <div>
-            <h2>Package Details</h2>
-            <p>Package Name: {state?.packageName}</p>
-            <p>Date: {state?.date}</p>
-            <p>Rooms: {state?.rooms}</p>
-            <p>Adults: {state?.adults}</p>
-            <p>Children: {state?.children}</p>
-            <p>Infants: {state?.infants}</p>
-            <p>Themes: {state?.themes.join(', ')}</p>
-            <p>Places: {state?.places.join(', ')}</p>
-         </div> */}
     </>
   )
 }
