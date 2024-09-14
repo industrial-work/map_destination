@@ -5,7 +5,7 @@ function PackageCard({ packageName, date, rooms, adults, children, infants, them
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/SelectedPackage', { 
+        navigate('/selected-package', { 
             state: { 
                 packageName, 
                 date, 

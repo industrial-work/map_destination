@@ -16,10 +16,6 @@ export default function Navbar() {
     setIsOpen(false); // Close the hamburger menu on item click
   };
 
-  const handleLoginRedirect = () => {
-    // Handle redirect logic if needed
-  };
-
 
   return (
     <>
@@ -27,7 +23,7 @@ export default function Navbar() {
         <div className="nav-container">
 
         <div className='img-div'>
-          <img className='nav-logo' src="/images/logo.png" alt="Logo" srcset="" />
+          <img className='nav-logo' src="/images/logo.png" alt="Logo" />
           </div>
     
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
@@ -39,15 +35,7 @@ export default function Navbar() {
           <li><NavLink to="/partner" onClick={handleMenuItemClick}>Partner With Us</NavLink></li>
           <li><NavLink to="/helpline" onClick={handleMenuItemClick}>24x7Helpline</NavLink></li>
           <li><NavLink to="/more" onClick={handleMenuItemClick}>More</NavLink></li>
-          {/* {!isAuthenticated ? (
-            <> */}
-              <NavLink to="/login" className="button" onClick={handleMenuItemClick}>Login / Create Account</NavLink>
-            {/* </>
-          ) : (
-            <>
-              <LogoutButton onClick={handleLoginRedirect}>Logout</LogoutButton>
-            </> */}
-          {/* )} */}
+          <NavLink to="/login" className="button" onClick={handleMenuItemClick}>Login / Create Account</NavLink>
         </ul>
 
         </div>

@@ -1,33 +1,36 @@
-import React from 'react';
-import './Feature.css';
+import React from "react";
+import "./Feature.css";
 
 const Feature = () => {
   const featuresData = [
     {
-      icon: 'fa-shield-alt',
-      title: 'Safety features',
+      icon: "fa-shield-alt",
+      title: "Safety features",
       points: [
-        'Centralised tracking system',
-        'Emergency response system',
-        'Professional chauffeur',
-        'Sanitised cabs'
-      ]
+        "Centralised tracking system",
+        "Emergency response system",
+        "Professional chauffeur",
+        "Sanitised cabs",
+      ],
     },
     {
-      icon: 'fa-headset',
-      title: '24*7 support',
-      description: 'We\'re committed to providing quality service around the clock. Our customer service never sleeps.'
+      icon: "fa-headset",
+      title: "24*7 support",
+      description:
+        "We're committed to providing quality service around the clock. Our customer service never sleeps.",
     },
     {
-      icon: 'fa-money-check-alt',
-      title: 'Affordable Rate',
-      description: 'Get Your Money\'s Worth With 100% cancelation policy and here you find the Perfect Balance of Quality and Price.'
+      icon: "fa-money-check-alt",
+      title: "Affordable Rate",
+      description:
+        "Get Your Money's Worth With 100% cancelation policy and here you find the Perfect Balance of Quality and Price.",
     },
     {
-      icon: 'fa-gift',
-      title: 'Surprise Gift',
-      description: 'We are excited to offer a special surprise gift to all of our customers who book a tour, cab or hotel stay with us.'
-    }
+      icon: "fa-gift",
+      title: "Surprise Gift",
+      description:
+        "We are excited to offer a special surprise gift to all of our customers who book a tour, cab or hotel stay with us.",
+    },
   ];
 
   return (

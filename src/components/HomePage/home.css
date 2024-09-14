@@ -1,186 +1,172 @@
-
-.h-main-container{
-    background: linear-gradient(to bottom, #05192d, #0f3764);
-    padding-bottom: 50px;
-    position: relative;
+.h-main-container {
+  background: linear-gradient(to bottom, #05192d, #0f3764);
+  padding-bottom: 50px;
+  position: relative;
 }
 
-@media only screen and (max-width: 657px) {
-    .h-main-container{
-        margin-top: 100px;
-    }
-  }
-
-#header-button{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+#header-button {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.inner-header-btn{
-    /* width: 30%; */
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    font-size: 14px;
-    top: 8px;
+.inner-header-btn {
+  /* width: 30%; */
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  font-size: 14px;
+  top: 8px;
 }
-
 
 .inner-header-btn button {
-    background-color: transparent;
-    border: none;
-    color: #ffff;
-    font-weight: bold;
-    margin-top: 30px;
-    padding: 10px 23px;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 10px 23px;
+  cursor: pointer;
 }
-@media only screen and (max-width: 750px) {
-    .inner-header-btn{
-        width: 75%;
-        margin-left: 22px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .inner-header-btn button {
-       
-        margin-top: 5px;
-    }
-  }
-.white-inside-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 
+.white-inside-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.inner-white{
-    background-color: #ffff;
-    width: 70%;
-    overflow: hidden;
-    padding: 20px 30px; 
-    border-radius: 10px;
+.inner-white {
+  background-color: #ffff;
+  width: 70%;
+  overflow: hidden;
+  padding: 20px 30px;
+  border-radius: 10px;
 }
 .nav-button.active {
-    background-color: white;
-    color: #f0911e;
-    border-radius: 6px;
-
-  }
-  .nav-button{
-    margin-right: 7px;
-    transition: all 0.3s;
-  }
+  background-color: white;
+  color: #f0911e;
+  border-radius: 6px;
+}
+.nav-button {
+  margin-right: 7px;
+  transition: all 0.3s;
+}
 .nav-button:hover {
-    background-color: white;
-    color: #f0911e;
-    border-radius: 6px;
+  background-color: white;
+  color: #f0911e;
+  border-radius: 6px;
+}
+.nav-button:focus {
+  outline: none;
+}
 
-  }
-.nav-button:focus{
-    outline: none;
-  }
-@media only screen and (max-width: 750px) {
-    .inner-white{
-        width: 85%;
-    }
-  }
 /* ------------------------------- */
-.parent-pkg{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+.parent-pkg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.child1-pkg{
-    display: flex;
-    flex-direction: column;
-}
-
-.child1-pkg input{
-    /* width: 230px; */
-}
-@media only screen and (max-width: 550px) {
-    .child1-pkg input{
-        width: 88%;
-    }
-  }
-.labell{
-    margin: 10px 0px;
-    font-size: 15px;
-    font-weight: bold;
-}
-.inputt{
-    padding: 10px 15px;
-    border-radius: 3px;
-    margin-bottom: 2px;
-    border: 1px solid #757575;
-}
-.inpu{
-    padding: 10px 15px;
-    border-radius: 3px;
-    margin-bottom: 2px;
-    color: #000000;
-    background-color: #ffff;
-    border: 1px solid #757575;
-}
-.child2-pkg{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-}
-.child3-pkg{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+.child1-pkg {
+  display: flex;
+  flex-direction: column;
 }
 
-.search-pkg{
-    display: flex;
-    align-items: center;
+.labell {
+  margin: 10px 0px;
+  font-size: 15px;
+  font-weight: bold;
 }
-.search-pkg button{
-    border-radius: 5px;
-    padding: 12px 40px;
-    background: linear-gradient(to right, #47a5fa, #0a5ff0);
-    color: white;
-    font-weight: bold;
-    border: none;
-    margin-top: 15px;
-    cursor: pointer;
+.inputt {
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  border: 1px solid #757575;
 }
-.search-pkg button:focus{
-   outline: none;
+.inpu {
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  color: #000000;
+  background-color: #ffff;
+  border: 1px solid #757575;
+}
+.child2-pkg {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.child3-pkg {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
-
-
-  /* --------------------------------------------------------- */
-
-  
-/* =---------------------------------- */
-.jackpot-main{
-    background-color: #d7d9db;
-    height: 70vh;
-    /* margin-bottom: 20px; */
+.search-pkg {
+  display: flex;
+  align-items: center;
 }
-.j-heading{
-   position: relative;
-   top: 20px;
-   color: #1c6ab3;
+.search-pkg button {
+  border-radius: 5px;
+  padding: 12px 40px;
+  background: linear-gradient(to right, #47a5fa, #0a5ff0);
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
 }
-.j-heading h2{
-   font-weight: bold;
+.search-pkg button:focus {
+  outline: none;
+}
+
+/* ----------------------------------- */
+.jackpot-main {
+  background-color: #d7d9db;
+  height: 70vh;
+  /* margin-bottom: 20px; */
+}
+.j-heading {
+  position: relative;
+  top: 20px;
+  color: #1c6ab3;
+}
+.j-heading h2 {
+  font-weight: bold;
 }
 /* ----------Services------------ */
-.OurServices{
-    background-color: #f5f5f5;
-    margin-top: 5px;
+.OurServices {
+  background-color: #f5f5f5;
+  margin-top: 5px;
 }
 
+.icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
 
-.icon{
-    font-size: 18px;
-    margin-right: 5px;
+/* -----Media Query----- */
+@media only screen and (max-width: 657px) {
+  .h-main-container {
+    margin-top: 90px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .inner-header-btn {
+    width: 75%;
+    margin-left: 22px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inner-header-btn button {
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .inner-white {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .child1-pkg input {
+    width: 88%;
+  }
 }

@@ -1,66 +1,65 @@
-.inner-drop{
-    background-color: white;
-    position: absolute;
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  .input-group{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 20px;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-  }
-  .counter{
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    justify-content: center;
-  }
-  .counter button{
-    border: none;
-    width: 28px;
-    height: 28px;
-    line-height: 29px;
-    font-size: 18px;
-    background-color: rgba(128, 137, 150, 0.08);
-    color: #0d233e;
-    display: inline-block;
-    text-align: center;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    cursor: pointer;
-    position: relative;
+.inner-drop {
+  background-color: white;
+  position: absolute;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.counter {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  justify-content: center;
+}
+.counter button {
+  border: none;
+  width: 28px;
+  height: 28px;
+  line-height: 29px;
+  font-size: 18px;
+  background-color: rgba(128, 137, 150, 0.08);
+  color: #0d233e;
+  display: inline-block;
+  text-align: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.counter span {
+  margin: 0px 10px;
+}
+.combine-grp {
+  display: flex;
+}
+.input-group label {
+  font-size: 11px;
+  font-weight: 600;
+}
+.input-group span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.input-error {
+  border-color: red;
+}
 
-  }
-  .counter span{
-    margin: 0px 10px;
-  }
-  .combine-grp{
-    display: flex;
-  }
-  .input-group label{
-    font-size: 11px;
-    font-weight: 600;
-  }
-  .input-group span{
-    font-size: 15px;
-    font-weight: 600;
-  }
-  .input-error {
-    border-color: red;
-  }
-  
-  .error-text {
-    color: red;
-    font-size: 0.875em;
-  }
+.error-text {
+  color: red;
+  font-size: 0.875em;
+}
